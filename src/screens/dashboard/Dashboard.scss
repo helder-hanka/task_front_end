@@ -1,11 +1,11 @@
 #sidebar {
   background-color: #f7f7f7;
-  min-width: 400px;
 }
 nav {
   ul {
     font-size: 2rem;
     list-style: none;
+    padding: 0;
     li {
       padding: 1rem;
       a {
@@ -16,5 +16,5 @@ nav {
 }
 
 #detail {
-  width: 100%;
+  flex-grow: 3;
 }

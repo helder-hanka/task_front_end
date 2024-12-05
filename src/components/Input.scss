@@ -1,0 +1,14 @@
+input {
+  border: none;
+  border-bottom: 2px solid rgb(133, 110, 110);
+  margin-bottom: 10px;
+  background-color: white;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  span {
+    font-size: 1.5rem;
+  }
+}

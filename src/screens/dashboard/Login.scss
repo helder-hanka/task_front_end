@@ -1,0 +1,13 @@
+$layout-breakpoint-small: 1032px;
+#login-form {
+  width: 700px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 500px;
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  #login-form {
+    width: 90%;
+  }
+}

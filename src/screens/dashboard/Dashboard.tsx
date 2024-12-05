@@ -11,7 +11,7 @@ const Dashboard: React.FC = () => {
             <NavLink to="login">Connexion Admin</NavLink>
           </li>
           <li>
-            <NavLink to="signup">Creéation Admin</NavLink>
+            <NavLink to="signup">Création Admin</NavLink>
           </li>
         </ul>
       </nav>
