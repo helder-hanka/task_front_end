@@ -8,7 +8,14 @@ const Dashboard: React.FC = () => {
       <nav id="sidebar">
         <ul>
           <li>
-            <NavLink to="login">Connexion Admin</NavLink>
+            <NavLink
+              to="login"
+              className={({ isActive, isPending }) =>
+                isActive ? "active" : isPending ? "pending" : ""
+              }
+            >
+              Connexion Admin
+            </NavLink>
           </li>
           <li>
             <NavLink to="signup">Création Admin</NavLink>

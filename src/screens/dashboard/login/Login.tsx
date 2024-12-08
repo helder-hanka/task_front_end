@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-router-dom";
-import Input from "../../components/Input";
-import Button from "../../components/Button";
+import Input from "../../../components/Input";
+import Button from "../../../components/Button";
 import "./Login.scss";
 
 const Login = () => {

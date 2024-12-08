@@ -5,7 +5,7 @@ interface IInput {
   placeholder: string;
   type: string;
   name: string;
-  title: string;
+  title?: string;
 }
 const Input: React.FC<IInput> = ({ placeholder, type, name, title }) => {
   return (
