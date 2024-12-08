@@ -1,5 +1,5 @@
 #sidebar {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
 }
 nav {
   ul {
@@ -16,5 +16,10 @@ nav {
 }
 
 #detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-grow: 3;
+  background-color: #f4f7fe;
 }
