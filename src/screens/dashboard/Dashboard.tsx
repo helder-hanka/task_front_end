@@ -3,22 +3,28 @@ import { NavLink, Outlet } from "react-router-dom";
 import "./Dashboard.scss";
 
 const Dashboard: React.FC = () => {
+  const getNavLinkClass = ({
+    isActive,
+    isPending,
+  }: {
+    isActive: boolean;
+    isPending: boolean;
+  }): string => {
+    return isActive ? "active" : isPending ? "pending" : "";
+  };
   return (
     <>
       <nav id="sidebar">
         <ul>
           <li>
-            <NavLink
-              to="login"
-              className={({ isActive, isPending }) =>
-                isActive ? "active" : isPending ? "pending" : ""
-              }
-            >
+            <NavLink to="login" className={getNavLinkClass}>
               Connexion Admin
             </NavLink>
           </li>
           <li>
-            <NavLink to="signup">Création Admin</NavLink>
+            <NavLink to="signup" className={getNavLinkClass}>
+              Création Admin
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -11,10 +11,15 @@ nav {
       padding: 1rem;
       a {
         text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 5px;
       }
       .active {
         background-color: hsl(224, 98%, 58%);
         color: white;
+      }
+      .pending {
+        color: hsl(224, 98%, 58%);
       }
     }
   }
