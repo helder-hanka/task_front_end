@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "./screens/dashboard/Dashboard";
 import Login from "./screens/dashboard/login/Login";
 import Signup from "./screens/dashboard/signup/Signup";
+import { APP_ROUTES } from "./utils/constants";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ const router = createBrowserRouter([
         errorElement: <i>Error page</i>,
         children: [
           { index: true, element: <i>Page A construre</i> },
-          { path: "login/", element: <Login /> },
-          { path: "signup", element: <Signup /> },
+          { path: APP_ROUTES.SIGN_IN, element: <Login /> },
+          { path: APP_ROUTES.SIGN_UP, element: <Signup /> },
         ],
       },
     ],
