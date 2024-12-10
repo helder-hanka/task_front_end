@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:400";
+const API_URL = "http://localhost:4000";
 
 export const API_ROUTES: Record<string, string> = {
   SIGN_UP: `${API_URL}/api/signup`,

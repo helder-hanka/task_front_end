@@ -11,6 +11,12 @@ $layout-breakpoint-small: 1032px;
   box-shadow: 4px 4px 14px 0px lightsteelblue;
 }
 
+.error {
+  color: red;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+
 @media (max-width: $layout-breakpoint-small) {
   #login-form {
     width: 90%;

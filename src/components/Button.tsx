@@ -1,8 +1,17 @@
 import React from "react";
 import "./Button.scss";
 
-const Button: React.FC = () => {
-  return <button type="submit">Validez</button>;
+interface IBtn {
+  _name?: string;
+  value?: string;
+  disabled?: boolean;
+}
+const Button: React.FC<IBtn> = ({ _name, value, disabled }) => {
+  return (
+    <button type="submit" name={_name} value={value}>
+      Validez
+    </button>
+  );
 };
 
 export default Button;
