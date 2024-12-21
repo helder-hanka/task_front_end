@@ -1,8 +1,12 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import "./Dashboard.scss";
+import { getInLocalStorage, removeUserToken } from "../../lib/common";
+import Button from "../../components/Button";
+import CircleAnimation from "../../components/circle/CircleAnimation";
 
 const Dashboard: React.FC = () => {
+  const user = getInLocalStorage();
   const getNavLinkClass = ({
     isActive,
     isPending,
@@ -17,9 +21,13 @@ const Dashboard: React.FC = () => {
       <nav id="sidebar">
         <ul>
           <li>
-            <NavLink to="login" className={getNavLinkClass}>
-              Connexion Admin
-            </NavLink>
+            {user ? (
+              <CircleAnimation />
+            ) : (
+              <NavLink to="login" className={getNavLinkClass}>
+                Connexion Admin"
+              </NavLink>
+            )}
           </li>
           <li>
             <NavLink to="signup" className={getNavLinkClass}>
