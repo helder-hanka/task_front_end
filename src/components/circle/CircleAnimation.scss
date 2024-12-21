@@ -1,0 +1,31 @@
+.container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #21b2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  .circle {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: aqua;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    animation: circle 6s linear infinite;
+  }
+  span {
+    color: #2732d1;
+  }
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-100px) rotate(-360deg);
+  }
+}
